@@ -23,3 +23,8 @@ gulp.task("styles", function() {
     .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
   });
+
+gulp.task ("copy-html",function(){
+  gulp.src('./index')
+    .pipe(gulp.dest('dist'));
+});
