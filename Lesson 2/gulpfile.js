@@ -28,3 +28,8 @@ gulp.task ("copy-html",function(){
   gulp.src('./index')
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task ("copy-img",function(){
+  gulp.src('/img/*')
+    .pipe(gulp.dest('dist/img'));
+});
