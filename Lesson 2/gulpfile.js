@@ -20,6 +20,6 @@ gulp.task("styles", function() {
         browsers: ["last 2 versions"]
       })
     )
-    .pipe(gulp.dest("./css"))
+    .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
   });
